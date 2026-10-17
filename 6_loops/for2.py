@@ -50,3 +50,38 @@ for i in list1:
         large=i
 
 print(large)
+
+print(list1.sort())
+print(list1)
+
+
+list1=[23,56,89,45,25]
+sort_list=[]
+for i in range(5):
+    small=list1[0]
+    for i in list1:
+        if i<small:
+            small=i
+    sort_list.append(small)
+    list1.remove(small)
+print(sort_list)
+
+
+l1=[33,55,66,55,44,55,22,55,11]
+number=55
+count=0
+for i in l1:
+    if number==i:
+        count=count+1
+
+print(count)
+
+
+fib=[0,1]
+number=15
+for i in range(number-2):
+    last=fib[-1]
+    last2=fib[-2]
+    current=last+last2
+    fib.append(current)
+print(fib)
