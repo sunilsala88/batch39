@@ -78,10 +78,11 @@ print(count)
 
 
 fib=[0,1]
-number=15
+number=5
 for i in range(number-2):
-    last=fib[-1]
-    last2=fib[-2]
-    current=last+last2
+    last=fib[-1] #last=fib[(len(fib)-1)]
+    second_last=fib[-2]
+    current=last+second_last
     fib.append(current)
+    
 print(fib)
