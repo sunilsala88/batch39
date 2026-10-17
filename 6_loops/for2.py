@@ -41,3 +41,12 @@ for i in range(4):
     den=den+v1
 print(num,den)
 print(num/den)
+
+list1=[23,56,89,45,25]
+print(max(list1))
+large=list1[0]
+for i in list1:
+    if i>large:
+        large=i
+
+print(large)
