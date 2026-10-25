@@ -41,3 +41,20 @@ print(n1)
 
 
 numbers=[22,55,77,66,33]
+rev_list=[]
+for i in numbers:
+    rev_list.insert(0,i)
+print(rev_list)
+
+
+print(list(range(4,-1,-1)))
+rev_list=[]
+for i in range(len(numbers)-1,-1,-1):
+    rev_list.append(numbers[i])
+print(rev_list)
+
+print(list(range(-1,-6,-1)))
+rev_list=[]
+for i in range(-1,-(len(numbers)+1),-1):
+    rev_list.append(numbers[i])
+print(rev_list)
