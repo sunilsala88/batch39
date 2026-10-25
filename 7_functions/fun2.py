@@ -58,3 +58,24 @@ rev_list=[]
 for i in range(-1,-(len(numbers)+1),-1):
     rev_list.append(numbers[i])
 print(rev_list)
+
+
+def rev_string(word:str)->str:
+    rev_str=''
+    for i in word:
+        rev_str=i+rev_str
+
+    return rev_str
+
+s1=rev_string('hello')
+print(s1)
+#palindrome
+
+def check_palindrome(string1:str)->bool:
+    string2=rev_string(string1)
+    if string1==string2:
+        return True
+    else:
+        return False
+
+print(check_palindrome('madame'))
