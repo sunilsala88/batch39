@@ -54,3 +54,24 @@ greet='hello'
 print(greet)
 
 #calculatar
+
+def start_calculator():
+    while True:
+        operation=input('enter the operation symbol (press q to exit)')
+        if operation.lower()=='q':
+            print('exiting the code')
+            break
+        num1=int(input(' enter num 1'))
+        num2=int(input(' enter num 2'))
+
+        if operation=='+':
+            result=num1+num2
+        if operation=='-':
+            result=num1-num2
+        if operation=='*':
+            result=num1*num2
+        if operation=='/':
+            result=num1/num2
+        print(result)
+
+start_calculator()
