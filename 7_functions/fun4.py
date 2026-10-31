@@ -52,3 +52,5 @@ greet='hello'
 
 #local and global
 print(greet)
+
+#calculatar
